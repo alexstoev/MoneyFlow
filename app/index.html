@@ -5,14 +5,18 @@
 	<title>Money Flow</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-	<ng-include src="'/navigation/partials/navigation.html'" />
+	<div ng-include="'/navigation/partials/navigation.html'"></div>
+
+	<ng-view></ng-view>
 
 	<script type="text/javascript" src="/session/session.js"></script>
+	<script type="text/javascript" src="/home/HomeController.js"></script>
 	<script type="text/javascript" src="/navigation/NavigationController.js"></script>
 	<script type="text/javascript" src="/MoneyFlow.js"></script>
 </body>
