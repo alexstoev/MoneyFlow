@@ -1,0 +1,32 @@
+{
+  "name": "MoneyFlow",
+  "version": "0.0.1",
+  "description": "Web based personal finances app, build with angular. This is only the client side and is just an exercise on Angular",
+  "author": "Alex Stoev <alex.stoev@gmail.com>",
+  "contributors": [
+    {
+      "name": "Alex Stoev",
+      "email": "alex.stoev@gmail.com"
+    }
+  ],
+  "main": "lib/foo.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexstoev/MoneyFlow"
+  },
+  "bugs": {
+    "url": "https://github.com/alexstoev/MoneyFlow/issues"
+  },
+  "keywords": [
+    "Money",
+    "Flow",
+    "angular"
+  ],
+  "dependencies": {
+    "express": "~4.10.6"
+  },
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "license": "MIT"
+}
