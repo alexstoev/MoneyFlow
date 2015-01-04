@@ -1,5 +1,52 @@
-<div ng-controller="HomeController">
-	
-	test: {{test}}
+<div class="container" ng-controller="HomeController">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-primary">
+				<div class="panel-heading"><strong>Current balance</strong></div>
+				<div class="panel-body text-right">
+					<table class="table">
+						<thead>
+							<tr><th class="text-right">Account</th><th class="text-right">Balance</th></tr>
+						</thead>
+						<tr><td>Account 1:</td><td>$1000.00</td></tr>
+						<tr><td>Account 2:</td><td>$300.00</td></tr>
+						<tr><td>Account 3:</td><td class="text-danger">-$66.00</td></tr>
+						<tr><td>Total balance:</td><td>$1234.00</td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			
+			<div class="panel panel-primary">
+				<div class="panel-heading"><strong>Lates income</strong></div>
+				<div class="panel-body text-right">
+					<table class="table">
+						<thead>
+							<tr><th class="text-right">Account</th><th class="text-right">Amount</th></tr>
+						</thead>
+						<tr><td>Account 1:</td><td class="text-success">$1000.00</td></tr>
+						<tr><td>Account 1:</td><td class="text-success">$300.00</td></tr>
+						<tr><td>Account 2:</td><td class="text-success">$66.00</td></tr>
+					</table>
+				</div>
+			</div>
 
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-primary">
+				<div class="panel-heading"><strong>Lates spendings</strong></div>
+				<div class="panel-body text-right">
+					<table class="table">
+						<thead>
+							<tr><th class="text-right">Account</th><th class="text-right">Amount</th></tr>
+						</thead>
+						<tr><td>Account 1:</td><td class="text-danger">-$123.00</td></tr>
+						<tr><td>Account 1:</td><td class="text-danger">-$30.00</td></tr>
+						<tr><td>Account 2:</td><td class="text-danger">-$76.00</td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
