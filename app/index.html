@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/ui-router/release/angular-ui-router.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
@@ -13,7 +14,7 @@
 
 	<div ng-include="'/navigation/partials/navigation.html'"></div>
 
-	<ng-view></ng-view>
+	<div ui-view></div>
 
 	<script type="text/javascript" src="/session/session.js"></script>
 	<script type="text/javascript" src="/home/HomeController.js"></script>

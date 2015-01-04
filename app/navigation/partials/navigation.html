@@ -8,22 +8,22 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Money Flow</a>
+			<a class="navbar-brand" href="javascript:;">Money Flow</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-				<li ng-show="session.isLoggedIn()"><a href="#">Transactions</a></li>
+				<li class="active"><a href="javascript:;">Home <span class="sr-only">(current)</span></a></li>
+				<li ng-show="session.isLoggedIn()"><a href="javascript:;">Transactions</a></li>
 				<li ng-show="session.isLoggedIn()" class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Accounts <span class="caret"></span></a>
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Accounts <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">Account 1</a></li>
-						<li><a href="#">Account 2</a></li>
-						<li><a href="#">Account 3</a></li>
+						<li><a href="javascript:;">Account 1</a></li>
+						<li><a href="javascript:;">Account 2</a></li>
+						<li><a href="javascript:;">Account 3</a></li>
 						<li class="divider"></li>
-						<li><a href="#">Add account</a></li>
+						<li><a href="javascript:;">Add account</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -33,14 +33,14 @@
 				</div>
 			</form>
 			<ul class="nav navbar-nav navbar-right">
-				<li ng-hide="session.isLoggedIn()"><a href="#">Sign up</a></li>
-				<li ng-hide="session.isLoggedIn()" ng-click="session.login()"><a href="#">Sign in</a></li>
+				<li ng-hide="session.isLoggedIn()"><a href="javascript:;">Sign up</a></li>
+				<li ng-hide="session.isLoggedIn()"><a ui-sref="home.authenticated" ng-click="session.login()">Sign in</a></li>
 				<li class="dropdown" ng-show="session.isLoggedIn()">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Alex Stoev <span class="caret"></span></a>
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Alex Stoev <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">Settings</a></li>
+						<li><a href="javascript:;">Settings</a></li>
 						<li class="divider"></li>
-						<li><a href="#" ng-click="session.logout()">Sign out</a></li>
+						<li><a ui-sref="home.guest" ng-click="session.logout()">Sign out</a></li>
 					</ul>
 				</li>
 			</ul>

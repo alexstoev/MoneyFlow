@@ -1,4 +1,7 @@
 angular.module('home', [])
-.controller('HomeController', ['$scope', function ($scope) {
+.controller('HomeAuthenticatedController', ['$scope', function ($scope) {
+	$scope.test = 'test';
+}])
+.controller('HomeGuestController', ['$scope', function ($scope) {
 	$scope.test = 'test';
 }]);
